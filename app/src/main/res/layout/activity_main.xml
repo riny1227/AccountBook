@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showWeekNumber="false" />
+
+    <LinearLayout
+        android:id="@+id/recordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/calendarView"
+        android:paddingTop="10dp"
+        android:paddingLeft="40dp" />
+
+    <TextView
+        android:id="@+id/totalIncomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="총 수입: 0원"
+        android:layout_below="@id/recordContainer"
+        android:paddingTop="16dp"
+        android:paddingLeft="40dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/totalExpenseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="총 지출: 0원"
+        android:layout_below="@id/totalIncomeTextView"
+        android:paddingLeft="40dp"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/btn_chart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_chart"
+        android:contentDescription="차트 확인"
+        android:scaleType="center" />
+
+    <ImageButton
+        android:id="@+id/btn_saving"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_saving"
+        android:contentDescription="나의 자산"
+        android:scaleType="center" />
+
+    <ImageButton
+        android:id="@+id/btn_draw"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_draw"
+        android:contentDescription="내역 작성 버튼"
+        android:scaleType="center" />
+
+</RelativeLayout>
